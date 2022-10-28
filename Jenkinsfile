@@ -23,7 +23,7 @@ pipeline{
         stage('Release') {
             steps {
                 sh '''
-                  oc project htnmb-rgreetings
+                  oc project htnmb-greetings
                   oc start-build greeting-console --follow --wait
                 '''
             }
